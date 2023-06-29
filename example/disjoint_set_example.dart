@@ -23,12 +23,10 @@ void main() {
   wordSet.makeSets(queryThree.split(' '));
   wordSet.union('largest', 'biggest');
   wordSet.union('worlds', 'planets');
-  
+
   final simOne = areQueriesSimilar(queryOne, queryTwo, wordSet);
   final simTwo = areQueriesSimilar(queryOne, queryThree, wordSet);
-  
+
   print('$simOne');
   print('$simTwo');
-  
-  
 }
